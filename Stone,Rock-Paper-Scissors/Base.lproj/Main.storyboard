@@ -11,54 +11,98 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stone_Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="MS8-aq-GjB" userLabel="bg">
-                                <rect key="frame" x="-12" y="-26" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jDP-fs-reS" userLabel="bg">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <color key="backgroundColor" red="0.062745098040000002" green="0.027450980390000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rock-Paper-Scissors SHOOT!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePU-uq-Yod">
-                                <rect key="frame" x="42" y="113" width="306" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
-                                <color key="textColor" red="0.94901960780000005" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cg-H8-lfB">
-                                <rect key="frame" x="123" y="745" width="144" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.13725490200000001" green="0.01176470588" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Play">
-                                    <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cyg-Dv-gyz"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="AS4-2a-8hb" userLabel="leftImageView">
-                                <rect key="frame" x="16" y="358" width="142" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Jbx-bf-tVo" userLabel="rightImageView">
-                                <rect key="frame" x="232" y="358" width="142" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="syt-h7-klT">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3U1-pI-t3C" userLabel="topView">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock-Paper-Scissors SHOOT!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePU-uq-Yod">
+                                                <rect key="frame" x="42" y="66.666666666666657" width="306" height="116.66666666666666"/>
+                                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ePU-uq-Yod" firstAttribute="centerX" secondItem="3U1-pI-t3C" secondAttribute="centerX" id="nLp-3Q-eTL"/>
+                                            <constraint firstItem="ePU-uq-Yod" firstAttribute="centerY" secondItem="3U1-pI-t3C" secondAttribute="centerY" id="sWa-cS-qj1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pE8-fA-ad3" userLabel="middleView">
+                                        <rect key="frame" x="0.0" y="258" width="390" height="250"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="3ce-mC-n9O">
+                                                <rect key="frame" x="20" y="41" width="350" height="168"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="AS4-2a-8hb" userLabel="leftImageView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="168"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Jbx-bf-tVo" userLabel="rightImageView">
+                                                        <rect key="frame" x="212" y="0.0" width="138" height="168"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3ce-mC-n9O" firstAttribute="centerY" secondItem="pE8-fA-ad3" secondAttribute="centerY" id="N5c-Q3-R5q"/>
+                                            <constraint firstItem="3ce-mC-n9O" firstAttribute="centerX" secondItem="pE8-fA-ad3" secondAttribute="centerX" id="Wsa-BR-xPV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZZ-u6-MGD" userLabel="bottomView">
+                                        <rect key="frame" x="0.0" y="516" width="390" height="250"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cg-H8-lfB">
+                                                <rect key="frame" x="149" y="171.66666666666663" width="92.333333333333314" height="68.333333333333314"/>
+                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.13725490200000001" green="0.01176470588" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Play">
+                                                    <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cyg-Dv-gyz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1cg-H8-lfB" firstAttribute="centerX" secondItem="JZZ-u6-MGD" secondAttribute="centerX" id="4vS-zu-3vt"/>
+                                            <constraint firstAttribute="bottom" secondItem="1cg-H8-lfB" secondAttribute="bottom" constant="10" id="Fvs-sf-ggu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="syt-h7-klT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AiT-5R-loU"/>
+                            <constraint firstItem="jDP-fs-reS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Aqn-e7-COq"/>
+                            <constraint firstItem="jDP-fs-reS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X3d-IW-a36"/>
+                            <constraint firstAttribute="trailing" secondItem="jDP-fs-reS" secondAttribute="trailing" id="aBC-xR-70V"/>
+                            <constraint firstItem="syt-h7-klT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b6t-kL-385"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="syt-h7-klT" secondAttribute="bottom" id="c8Q-q4-JwR"/>
+                            <constraint firstAttribute="bottom" secondItem="jDP-fs-reS" secondAttribute="bottom" id="ee1-Om-YuT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="syt-h7-klT" secondAttribute="trailing" id="fok-zN-uxw"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="leftImageView" destination="AS4-2a-8hb" id="TKw-vn-IbN"/>
                         <outlet property="rightImageView" destination="Jbx-bf-tVo" id="gnD-nL-32j"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33.846153846153847" y="93.127962085308056"/>
         </scene>
