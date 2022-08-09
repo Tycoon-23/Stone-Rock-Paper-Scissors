@@ -58,13 +58,29 @@
 			children = (
 				4816B1F72896F9630016B4CC /* AppDelegate.swift */,
 				4816B1F92896F9630016B4CC /* SceneDelegate.swift */,
-				4816B1FB2896F9630016B4CC /* ViewController.swift */,
-				4816B1FD2896F9630016B4CC /* Main.storyboard */,
+				48E922E528A254D500AF84E9 /* Controller */,
+				48E922E428A254CF00AF84E9 /* View */,
 				4816B2002896F9670016B4CC /* Assets.xcassets */,
 				4816B2022896F9670016B4CC /* LaunchScreen.storyboard */,
 				4816B2052896F9670016B4CC /* Info.plist */,
 			);
 			path = "Stone,Rock-Paper-Scissors";
+			sourceTree = "<group>";
+		};
+		48E922E428A254CF00AF84E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4816B1FD2896F9630016B4CC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48E922E528A254D500AF84E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4816B1FB2896F9630016B4CC /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
